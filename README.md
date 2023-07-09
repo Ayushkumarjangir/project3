@@ -9,7 +9,7 @@ The `ErrorHandlingExample` contract allows setting a value and provides examples
 
 ### Functions
 
-- `requirexample(uint256 _newValue)`: it will cheack with the existing value. Requires the `_newValue` to be greater than set value using the `require()` statement.
+- `requirExample(uint256 _newValue)`: it will check with the existing value. Requires the `_newValue` to be greater than set value using the `require()` statement.
 
 - `assertExample()`: Demonstrates the usage of `assert()` statement by checking that a condition is true. Throws an error and reverts the transaction if the condition is false.
 
