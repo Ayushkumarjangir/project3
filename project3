@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 contract ErrorHandlingExample {
     uint256 public value;
     
-    function requireExample(uint256 _newValue) external {
+    function requirExample(uint256 _newValue) external {
         require(_newValue > 150, "Value must be greater than existing value");
         value = _newValue;
     }
