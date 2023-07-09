@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ErrorHandlingExample {
+    uint256 public value;
+    
+    function setValue(uint256 _newValue) external {
+        require(_newValue > 0, "Value must be greater than zero");
+        value = _newValue;
+    }
+    
+    function assertExample() external pure {
+        uint256 x = 1;
+        uint256 y = 0;
+        assert(x != y); // Will throw an error and revert if the condition is false
+    }
+    
+    function revertExample() external pure {
+        uint256 x = 5;
+        uint256 y = 10;
+        if (x < y) {
+            revert("x must be greater than y");
+        }
+        // Rest of the code will not be executed if the condition is not met
+    }
+}
